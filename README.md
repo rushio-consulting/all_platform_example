@@ -22,11 +22,17 @@ flutter channel master && flutter upgrade
 
 You will need to set some environment variable to allow Flutter access new feature.
 
+For linux/macos :
+
 ```sh
 export ENABLE_FLUTTER_DESKTOP=true
 export FLUTTER_WEB=true
 export CHROME_EXECUTABLE="google-chrome"
 ```
+
+For windows :
+
+TBD
 
 ### 3. Launching the application
 
