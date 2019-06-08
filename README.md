@@ -1,16 +1,45 @@
-# stashall
+# All platform example
 
-A new Flutter project.
+The repository goal is to provide an example of a cross-platform application (android, ios, linux, macos, windows, web) written in Flutter look like.
 
-## Getting Started
+In this example we use API that are different based on the platform.
 
-This project is a starting point for a Flutter application.
+We use [Mobx.dart](https://pub.dev/packages/mobx) to manage the state of the application.
 
-A few resources to get you started if this is your first Flutter project:
+## How can I launch the application
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### 1. Configuring Flutter
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You will need to be on the master channel of Flutter
+
+```sh
+flutter channel master && flutter upgrade
+```
+
+### 2. Settings some env variable
+
+You will need to set some environment variable to allow Flutter access new feature.
+
+```sh
+export ENABLE_FLUTTER_DESKTOP=true
+export FLUTTER_WEB=true
+export CHROME_EXECUTABLE="google-chrome"
+```
+
+### 3. Launching the application
+
+You can launch the application with F5 on vscode for desktop and mobile.
+
+If you want to test the application on the web you will need to use the command line.
+
+some example:
+
+- Linux
+```sh
+flutter run -d linux
+```
+
+- Web
+```sh
+flutter run -d web
+```
