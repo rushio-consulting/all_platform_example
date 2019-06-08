@@ -45,32 +45,13 @@ class _CounterState extends State<Counter> {
   }
 
   Future<void> _loadCounter() async {
-    int value = 0;
-    if (widget.platform.isDesktop) {
-      value = await LoadCounter('test.db').loadCounter();
-    } else if (widget.platform.isMobile) {
-      final directory = await getApplicationDocumentsDirectory();
-      value = await LoadCounter('${directory.path}/test.db').loadCounter();
-    } else if (widget.platform.isWeb) {
-      await Future.value();
-      value = await LoadCounter(null).loadCounter();
-    }
-    widget.counterStore.counter = value;
+    widget.counterStore.counter = await loadCounter(widget.platform);
     widget.appStore.finishLoadingCounter();
   }
 
   Future<void> _initReactions() async {
-    if (widget.platform.isDesktop) {
-      await Future.value();
-      saveCounterBase = SaveCounter('test.db', widget.counterStore);
-    } else if (widget.platform.isMobile) {
-      final directory = await getApplicationDocumentsDirectory();
-      saveCounterBase =
-          SaveCounter('${directory.path}/test.db', widget.counterStore);
-    } else if (widget.platform.isWeb) {
-      await Future.value();
-      saveCounterBase = SaveCounter(null, widget.counterStore);
-    }
+    saveCounterBase =
+        await initSaveCounterReaction(widget.platform, widget.counterStore);
     widget.appStore.finishSaveCounterReaction();
   }
 
