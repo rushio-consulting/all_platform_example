@@ -6,7 +6,7 @@ In this example we use API that are different based on the platform.
 
 We use [Mobx.dart](https://pub.dev/packages/mobx) to manage the state of the application.
 
-WARNING: this is highly experimental and subject to change/bug/crash at every time.
+**WARNING: this is highly experimental and subject to change/bug/crash at every time.**
 
 ## How can I launch the application
 
