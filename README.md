@@ -1,6 +1,6 @@
 # All platform example
 
-The repository goal is to provide an example of a cross-platform application (android, ios, linux, macos, windows, web) written in Flutter look like.
+The repository goal is to provide an example of a cross-platform application (android, ios, linux, macos, windows, web) written in Flutter.
 
 In this example we use API that are different based on the platform.
 
