@@ -81,3 +81,7 @@ Launch on mac:
 ```sh
 flutter run -d macos
 ```
+
+### 4. Hm there is a bug :/
+
+If you encounter a problem please create an issue [here](https://github.com/rushio-consulting/all_platform_example/issues/new?assignees=&labels=&template=bug_report.md&title=) and we will see what we can do about it.
