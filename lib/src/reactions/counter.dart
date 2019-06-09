@@ -1,9 +1,7 @@
 import 'package:flutter/widgets.dart';
-import 'package:path_provider/path_provider.dart';
-import 'package:stashall/src/platform_specific/load_counter/load_counter.dart';
-import 'package:stashall/src/platform_specific/platform/platform.dart';
-import 'package:stashall/src/platform_specific/save_counter/save_counter_base.dart';
-import 'package:stashall/src/platform_specific/save_counter/save_counter.dart';
+import 'package:mobx/mobx.dart';
+import 'package:stashall/src/platform_specific/rc_cross_platform/platform.dart';
+import 'package:stashall/src/platform_specific/rc_cross_preferences/rc_cross_preferences.dart';
 import 'package:stashall/src/stores/app/app.dart';
 import 'package:stashall/src/stores/counter/counter.dart';
 
@@ -25,7 +23,8 @@ class Counter extends StatefulWidget {
 }
 
 class _CounterState extends State<Counter> {
-  SaveCounterBase saveCounterBase;
+  RcCrossPreferences rcCrossPreferences;
+  ReactionDisposer _saveReactionDisposer;
 
   @override
   void initState() {
@@ -35,23 +34,29 @@ class _CounterState extends State<Counter> {
 
   @override
   void dispose() {
-    saveCounterBase.dispose();
+    _saveReactionDisposer();
     super.dispose();
   }
 
   Future<void> _init() async {
+    rcCrossPreferences = await RcCrossPreferences.getInstance(path: 'test.db');
     await _loadCounter();
     await _initReactions();
   }
 
   Future<void> _loadCounter() async {
-    widget.counterStore.counter = await loadCounter(widget.platform);
+    widget.counterStore.counter = rcCrossPreferences.getInt(
+      'counter',
+      defaultValue: 0,
+    );
     widget.appStore.finishLoadingCounter();
   }
 
   Future<void> _initReactions() async {
-    saveCounterBase =
-        await initSaveCounterReaction(widget.platform, widget.counterStore);
+    _saveReactionDisposer =
+        reaction((_) => widget.counterStore.counter, (counter) {
+      rcCrossPreferences.setInt('counter', counter);
+    });
     widget.appStore.finishSaveCounterReaction();
   }
 

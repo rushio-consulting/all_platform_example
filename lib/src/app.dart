@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:stashall/src/platform_specific/platform/platform.dart';
+import 'package:stashall/src/platform_specific/rc_cross_platform/platform.dart';
 import 'package:stashall/src/providers/reactions.dart';
 import 'package:stashall/src/providers/stores.dart';
 import 'package:stashall/src/views/home.dart';

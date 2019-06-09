@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:provider/provider.dart';
-import 'package:stashall/src/platform_specific/platform/platform.dart';
+import 'package:stashall/src/platform_specific/rc_cross_platform/platform.dart';
 import 'package:stashall/src/stores/counter/counter.dart';
 
 class MyHomePage extends StatefulWidget {
