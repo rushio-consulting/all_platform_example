@@ -50,6 +50,8 @@ If you want to test the application on the web you will need to use the command 
 
 some example:
 
+
+
 - Linux
 ```sh
 flutter run -d linux
@@ -58,4 +60,24 @@ flutter run -d linux
 - Web
 ```sh
 flutter run -d web
+```
+
+- MacOs
+
+
+  CocoaPods needs to be installed. It is used to retrieve the iOS and macOS 
+  platform side's plugin code that responds to your plugin usage on the Dart side.
+  Without CocoaPods, plugins will not work on iOS or macOS.
+  For more info, see https://flutter.dev/platform-plugins
+
+    To install CocoaPods:
+
+```sh
+brew install cocoapods
+pod setup
+```
+Launch on mac:
+    
+```sh
+flutter run -d macos
 ```
