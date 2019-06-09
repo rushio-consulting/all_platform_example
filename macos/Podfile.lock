@@ -1,0 +1,16 @@
+PODS:
+  - FlutterMacOS (1.0.0)
+
+DEPENDENCIES:
+  - FlutterMacOS (from `Flutter/ephemeral/.symlinks/flutter/darwin-x64`)
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: Flutter/ephemeral/.symlinks/flutter/darwin-x64
+
+SPEC CHECKSUMS:
+  FlutterMacOS: a0cd115f6cc6d3a91b8e3fb792e5babf85bcfee1
+
+PODFILE CHECKSUM: 8872c0ab1387502129a7ea5e460e82301282ae18
+
+COCOAPODS: 1.7.1
