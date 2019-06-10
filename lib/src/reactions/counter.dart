@@ -1,7 +1,7 @@
 import 'package:flutter/widgets.dart';
 import 'package:mobx/mobx.dart';
-import 'package:stashall/src/platform_specific/rc_cross_platform/platform.dart';
-import 'package:stashall/src/platform_specific/rc_cross_preferences/rc_cross_preferences.dart';
+import 'package:rc_cross_platform/rc_cross_platform.dart';
+import 'package:rc_cross_preferences/rc_cross_preferences.dart';
 import 'package:stashall/src/stores/app/app.dart';
 import 'package:stashall/src/stores/counter/counter.dart';
 

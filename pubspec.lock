@@ -354,8 +354,26 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.3"
-  shared_preferences:
+  rc_cross_platform:
     dependency: "direct main"
+    description:
+      path: "packages/rc_cross_platform"
+      ref: HEAD
+      resolved-ref: "35ec0ebc06c0f2b2f23e0171496ce05760e09cda"
+      url: "https://github.com/rushio-consulting/rc_cross.git"
+    source: git
+    version: "0.0.1"
+  rc_cross_preferences:
+    dependency: "direct main"
+    description:
+      path: "packages/rc_cross_preferences"
+      ref: HEAD
+      resolved-ref: "35ec0ebc06c0f2b2f23e0171496ce05760e09cda"
+      url: "https://github.com/rushio-consulting/rc_cross.git"
+    source: git
+    version: "0.0.1"
+  shared_preferences:
+    dependency: transitive
     description:
       name: shared_preferences
       url: "https://pub.dartlang.org"

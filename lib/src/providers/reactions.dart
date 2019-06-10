@@ -1,6 +1,6 @@
 import 'package:flutter/widgets.dart';
 import 'package:provider/provider.dart';
-import 'package:stashall/src/platform_specific/rc_cross_platform/platform.dart';
+import 'package:rc_cross_platform/rc_cross_platform.dart';
 import 'package:stashall/src/reactions/counter.dart';
 import 'package:stashall/src/stores/app/app.dart';
 import 'package:stashall/src/stores/counter/counter.dart';

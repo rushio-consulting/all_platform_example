@@ -16,7 +16,14 @@ dependencies:
   mobx: ^0.2.1
   flutter_mobx: ^0.2.0
   path_provider: ^1.1.0
-  shared_preferences: ^0.5.3+1
+  rc_cross_platform:
+    git: 
+      url: https://github.com/rushio-consulting/rc_cross.git
+      path: packages/rc_cross_platform
+  rc_cross_preferences:
+    git: 
+      url: https://github.com/rushio-consulting/rc_cross.git
+      path: packages/rc_cross_preferences
 
 dev_dependencies:
   flutter_test:
