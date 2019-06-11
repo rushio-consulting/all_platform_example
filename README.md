@@ -2,7 +2,7 @@
 
 The repository goal is to provide an example of a cross-platform application (android, ios, linux, macos, windows, web) written in Flutter.
 
-In this example we use API, that are different based on the platform, to save the value of the counter.
+In this example we use API, that are different based on the platform, to save and load the value of the counter.
 
 We use [Mobx.dart](https://pub.dev/packages/mobx) to manage the state of the application.
 
