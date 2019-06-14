@@ -8,6 +8,8 @@ We use [Mobx.dart](https://pub.dev/packages/mobx) to manage the state of the app
 
 **WARNING: this is highly experimental and subject to change/bug/crash at every time.**
 
+Blog post with the detail on how it work https://medium.com/@segaud.kevin/flutter-cross-platform-a2371fe790e7.
+
 ## How can I launch the application
 
 ### 1. Configuring Flutter

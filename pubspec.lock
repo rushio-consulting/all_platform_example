@@ -63,7 +63,7 @@ packages:
       name: build_runner
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.5.1"
+    version: "1.5.2"
   build_runner_core:
     dependency: transitive
     description:
@@ -159,7 +159,7 @@ packages:
       name: flutter_mobx
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.2.1+1"
+    version: "0.2.1+2"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -332,7 +332,7 @@ packages:
       name: provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.0.0"
+    version: "3.0.0+1"
   pub_semver:
     dependency: transitive
     description:
@@ -359,7 +359,7 @@ packages:
     description:
       path: "packages/rc_cross_platform"
       ref: HEAD
-      resolved-ref: "35ec0ebc06c0f2b2f23e0171496ce05760e09cda"
+      resolved-ref: "651da6b12f4e91a0eb6e3ece579fd1803dee52c1"
       url: "https://github.com/rushio-consulting/rc_cross.git"
     source: git
     version: "0.0.1"
@@ -368,7 +368,7 @@ packages:
     description:
       path: "packages/rc_cross_preferences"
       ref: HEAD
-      resolved-ref: "35ec0ebc06c0f2b2f23e0171496ce05760e09cda"
+      resolved-ref: "651da6b12f4e91a0eb6e3ece579fd1803dee52c1"
       url: "https://github.com/rushio-consulting/rc_cross.git"
     source: git
     version: "0.0.1"
