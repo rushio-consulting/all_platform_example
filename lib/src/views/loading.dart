@@ -14,7 +14,7 @@ class _LoadingViewState extends State<LoadingView> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    final appStore = Provider.of<AppStore>(context);
+    final appStore = Provider.of<AppStore>(context, listen: false);
     _loadingDisposer = when((_) => !appStore.isLoading, () {
       Navigator.of(context).pushReplacementNamed('/home');
     });

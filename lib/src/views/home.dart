@@ -22,8 +22,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final platform = Provider.of<Platform>(context);
-    final counterStore = Provider.of<CounterStore>(context);
+    final platform = Provider.of<Platform>(context, listen: false);
+    final counterStore = Provider.of<CounterStore>(context, listen: false);
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
@@ -39,9 +39,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Observer(
               builder: (c) => Text(
-                    '${counterStore.counter}',
-                    style: Theme.of(context).textTheme.display1,
-                  ),
+                '${counterStore.counter}',
+                style: Theme.of(context).textTheme.display1,
+              ),
             ),
           ],
         ),

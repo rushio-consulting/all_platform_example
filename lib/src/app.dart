@@ -35,7 +35,7 @@ class StashallApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Stashall',
+      title: 'All platform example',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -45,7 +45,7 @@ class StashallApp extends StatelessWidget {
           settings: routeSettings,
           pageBuilder: (c, _, __) {
             return MyHomePage(
-              title: 'Hello World !',
+              title: 'All platform example',
             );
           },
         );
