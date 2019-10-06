@@ -1,6 +1,0 @@
-# Generated code do not commit.
-export FLUTTER_ROOT=/home/kevin/Work/github.com/flutter/flutter
-export BUILD=debug
-export TRACK_WIDGET_CREATION=false
-export FLUTTER_TARGET=lib/main.dart
-export PROJECT_DIR=/home/kevin/Work/github.com/rushio-consulting/all_platform_example
